@@ -60,4 +60,11 @@ body {
     background-image: url('./elephant.jpg');
 }
 
+.word {
+    color: #f4faf8;
+    font-size: 1.2em;
+    font-weight: 900;
+    font-family: 'Pacifico', cursive;
+}
+
 </style>
