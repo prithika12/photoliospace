@@ -55,4 +55,9 @@ body {
     background-color: #cccccc;
 
 }
+
+body {
+    background-image: url('./elephant.jpg');
+}
+
 </style>
