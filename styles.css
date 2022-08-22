@@ -9,7 +9,7 @@ body {
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    background-color: darkseagreen;
 }
 
 .fa-facebook {
@@ -24,6 +24,9 @@ body {
         background-color: inherit;
         float: left;
         border: none;
+        font-family: 'Cormorant Infant';
+        font-palette: light;
+        color:azure;
         outline: none;
         cursor: pointer;
         padding: 14px 16px;
@@ -60,11 +63,18 @@ body {
     background-image: url('./elephant.jpg');
 }
 
-.word {
-    color: #f4faf8;
-    font-size: 1.2em;
+.clstitle {
+    color: floralwhite;
+    font-size: 3.2em;
     font-weight: 900;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Copperplate Gothic', cursive;
+}
+
+.clstitlemiddle {
+    color: floralwhite;
+    font-size: 3.2em;
+    font-weight: 900;
+    font-family: "Sylfaen", cursive;
 }
 
 </style>
