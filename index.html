@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+
+        <h2>Tabs</h2>
+        <p>Click on the buttons inside the tabbed menu:</p>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+            <button class="tablinks" onclick="openCity(event, 'AboutUs')">About Us</button>
+            <button class="tablinks" onclick="openCity(event, 'ContactUs')">Contact Us</button>
+        </div>
+
+        <section id="Home" class="tabcontent">
+
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p>
+
+
+            <!-- social media icons -->
+            <a href="https://www.facebook.com/prithimayura" target="blank_" class="fa fa-facebook"></a>
+        </section>
+
+
+        <div id="Aboutus" class="tabcontent">
+
+        <div id="AboutUs" class="tabcontent">
+
+            <h3>Paris</h3>
+            <p>Paris is the capital of wat.</p>
+        </div>
+
+
+        <div id="Contactus" class="tabcontent">
+
+        <div id="ContactUs" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+
+        <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
+
+    </body>
+</html>
