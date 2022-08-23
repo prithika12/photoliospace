@@ -40,7 +40,7 @@ body {
     border: none;
     font-family: 'Trebuchet MS';
     font-palette: light;
-    color: azure;
+    color: whitesmoke;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
@@ -50,13 +50,13 @@ body {
 
         /* Change background color of buttons on hover */
         .tab button:hover {
-            background-color: #ddd;
+            background-color: ThreeDHighlight;
         }
 
         /* Create an active/current tablink class */
-        .tab button.active {
-            background-color: #ccc;
-        }
+    .tab button.active {
+        background-color: ThreeDHighlight;
+    }
 
 /* Style the tab content */
 .tabcontent {
