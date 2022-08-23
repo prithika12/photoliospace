@@ -178,4 +178,12 @@ svg {
     margin-left:8px;
     margin-right: 4px;
 }
-</style>
+
+@media all and (max-width:991px) {
+    .circle {
+        width: 120px !important;
+        height: 120px !important;
+        margin-bottom: 10px !important;
+    }
+
+    </style >
