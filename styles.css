@@ -13,7 +13,7 @@ body {
     background-color: hsl(0, 20%, 50%);*/
 }
     .centered {
-    text-align:center;
+    text-align: match-parent;
     }
 .fa {
     padding: 20px;
@@ -30,23 +30,23 @@ body {
 .fa-facebook {
     background: #3B5998;
     color: white;
-    position: page;
+    position: center;
 }
 
     /* Style the buttons inside the tab */
-    .tab button {
-        background-color: inherit;
-        float: left;
-        border: none;
-        font-family: 'Cormorant Infant';
-        font-palette: light;
-        color:azure;
-        outline: none;
-        cursor: pointer;
-        padding: 14px 16px;
-        transition: 0.3s;
-        font-size: 17px;
-    }
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    font-family: 'Trebuchet MS';
+    font-palette: light;
+    color: azure;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 23px;
+}
 
         /* Change background color of buttons on hover */
         .tab button:hover {
@@ -135,9 +135,10 @@ pgbody {
     padding: 16px 25px;
     background-color:slategrey;
     cursor: pointer;
-    font-size: 21px;
+    font-size: 18px;
     color: floralwhite;
     font-family:'Trebuchet MS';
+}
 
     .btn:hover {
         background-color: lightslategrey;
@@ -147,7 +148,6 @@ pgbody {
         background-color: ThreeDDarkShadow;
         color: beige;
     } 
-
 
 .highlight-text {
     display: inline-block;
