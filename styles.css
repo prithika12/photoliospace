@@ -64,11 +64,9 @@ body {
     color: white;
 }
 
-body{
-    background-image: url('./elephant.jpg');
-}
-
-
+body {
+    background-image: url('images/elephant.jpg');
+    }
 
 .clstitle{
     color: floralwhite;
