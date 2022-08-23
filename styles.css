@@ -170,9 +170,12 @@ pgbody {
 svg {
     fill: white;
     height: auto;
-    max-width: 36vmin;
-    transform-origin: center;
-    width: 36%;
+    max-width: 206vmin;
+    transform-origin: left;
+    width: 93%;
     position: absolute;
+    margin:8px;
+    margin-left:8px;
+    margin-right: 4px;
 }
 </style>
