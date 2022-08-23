@@ -12,15 +12,16 @@ body {
     background-color: darkseagreen;
     background-color: hsl(0, 20%, 50%);*/
 }
-
+    .centered {
+    text-align:center;
+    }
 .fa {
     padding: 20px;
     font-size: 30px;
     width: 50px;
     text-align: center;
     text-decoration: none;
-    align-items:flex-end;
-    align-content: flex-end;
+    
 }
 /* Add a hover effect if you want */
 .fa:hover {
@@ -29,8 +30,7 @@ body {
 .fa-facebook {
     background: #3B5998;
     color: white;
-    align-items: flex-end;
-    align-content: flex-end;
+    position: absolute;
 }
 
     /* Style the buttons inside the tab */
@@ -146,5 +146,33 @@ pgbody {
         background-color: #666;
         color: white;
     }
+.circle {
+    width: 500px;
+    height: 500px;
+    line-height: 500px;
+    border-radius: 50%;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    background: #000
+}
 
+.highlight-text {
+    display: inline-block;
+    margin: 10px;
+    border-radius: 60px;
+    background-color: black;
+    color: white;
+    font-size: 1.8em;
+    padding: 10px 20px;
+}
+
+svg {
+    fill: white;
+    height: auto;
+    max-width: 36vmin;
+    transform-origin: center;
+    width: 36%;
+    position: absolute;
+}
 </style>

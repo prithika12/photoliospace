@@ -7,7 +7,7 @@
     <body>
         <div>
             <br>
-            <div class="tab">
+            <div class="tab centered">
                 <button class="tablinks" onclick="openCity(event, 'page1')">Home</button>
                 <button class="tablinks" onclick="openCity(event, 'click_aboutus')">About Us</button>
                 <button class="tablinks" onclick="openCity(event, 'click_gallery')">Photo Gallery</button>
@@ -15,16 +15,32 @@
                 <!-- Add icon library -->
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-                <a href="https://www.facebook.com/prithimayura" target="blank_" class="fa fa-facebook" ></a>
+                <a href="https://www.facebook.com/prithimayura" target="blank_" class="fa fa-facebook"></a>
             </div>
-
-            <div id="page1" >
-
-                <h2><span class="clstitle"> Discover </span> <br> <span class="clstitlemiddle">your inner</span> <span class="clstitle"> Rhythm </span> </h2>
-                <br>
-
+            <div>
+                <svg viewBox="0 0 100 100" width="100" height="100">
+                    <defs>
+                        <path id="circle"
+                              d="
+                                M 50, 50
+                                m -37, 0
+                                a 37,37 0 1,1 74,0
+                                a 37,37 0 1,1 -74,0" />
+                    </defs>
+                    <text font-size="19">
+                        <textPath xlink:href="#circle">
+                            Discover your Inner Rhythm
+                        </textPath>
+                    </text>
+                </svg>
             </div>
+            <!-- <div id="page1">
 
+        <h2><span class="clstitle"> Discover </span> <br> <span class="clstitlemiddle">your inner</span> <span class="clstitle"> Rhythm </span> </h2>
+        <br>
+
+    </div>
+    -->
             <div id="click_aboutus" class="tabcontent">
 
                 <p class="aboutUs">
@@ -80,8 +96,8 @@
                         <img src="images/img5.jpeg" style="width:100%">
                         <img src="images/img2.jpeg" style="width:100%">
                     </div>
-                
-            </div>
+
+                </div>
             </div>
         </div>   
 
