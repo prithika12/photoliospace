@@ -8,13 +8,11 @@
 </head>
     <body>
         <div>
-            <h2>Tabs</h2>
-            <p>Click on the buttons inside the tabbed menu:</p>
 
             <div class="tab">
                 <button class="tablinks" onclick="openCity(event, 'page1')">Home</button>
                 <button class="tablinks" onclick="openCity(event, 'click_aboutus')">About Us</button>
-                <button class="tablinks" onclick="openCity(event, 'click_contactus')">Contact Us</button>
+                <button class="tablinks" onclick="openCity(event, 'click_gallery')">Photo Gallery</button>
             </div>
 
             <div id="page1" class="page1">
@@ -29,17 +27,62 @@
 
             <div id="click_aboutus" class="tabcontent">
 
-                <h3>Paris</h3>
-                <p>Paris is the capital of wat.</p>
+                <p class="aboutUs">
+                    The Founder and Artistic Director of Rhythm of Mayura, Prithika Kamalesan, is a dedicated dancer residing in Kitchener, Ontario. She is presently enrolled in a dual degree program (BBA & BSc) at Wilfrid Laurier University.
+
+                    She began her Bharatanatyam training when she was eight years old in India. After relocating to Canada, she successfully completed her Teacher's Diploma at Kalaimanram Academy of Fine Arts & Yoga. Since then, she was driven to open her own studio in order to share and teach everyone this joyful skill.
+                </p>
             </div>
 
 
-            <div id="click_contactus" class="tabcontent">
+            <div id="click_gallery" class="tabcontent">
 
-                <h3>Tokyo</h3>
-                <p>Tokyo is the capital of Japan.</p>
+                <!-- Header -->
+                <div class="header" id="myHeader">
+                    <button class="btn" onclick="one()">Large</button>
+                    <button class="btn active" onclick="two()">Pixel</button>
+                    <button class="btn" onclick="four()">Gallery</button>
+                </div>
+
+                <!-- Photo Grid -->
+                <div class="row">
+                    <div class="column">
+                        <img src="./img1.jpeg" style="width:100%">
+                        <img src="./img2.jpeg" style="width:100%">
+                        <img src="./img3.jpeg" style="width:100%">
+                        <img src="./img4.jpeg" style="width:100%">
+                        <img src="./img5.jpeg" style="width:100%">
+                        <img src="./img1.jpeg" style="width:100%">
+                        <img src="./img3.jpeg" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="./img1.jpeg" style="width:100%">
+                        <img src="./img2.jpeg" style="width:100%">
+                        <img src="./img3.jpeg" style="width:100%">
+                        <img src="./img4.jpeg" style="width:100%">
+                        <img src="./img5.jpeg" style="width:100%">
+                        <img src="./img2.jpeg" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="./img1.jpeg" style="width:100%">
+                        <img src="./img2.jpeg" style="width:100%">
+                        <img src="./img3.jpeg" style="width:100%">
+                        <img src="./img4.jpeg" style="width:100%">
+                        <img src="./img5.jpeg" style="width:100%">
+                        <img src="./img1.jpeg" style="width:100%">
+                        <img src="./img1.jpeg" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="./img1.jpeg" style="width:100%">
+                        <img src="./img2.jpeg" style="width:100%">
+                        <img src="./img3.jpeg" style="width:100%">
+                        <img src="./img4.jpeg" style="width:100%">
+                        <img src="./img5.jpeg" style="width:100%">
+                        <img src="./img2.jpeg" style="width:100%">
+                    </div>
+                
             </div>
-
+            </div>
         </div>   
 
         <script>
@@ -56,6 +99,49 @@
                 document.getElementById(cityName).style.display = "block";
                 evt.currentTarget.className += " active";
             }
+
+
+            // Get the elements with class="column"
+            var elements = document.getElementsByClassName("column");
+
+            // Declare a loop variable
+            var i;
+
+            // Full-width images
+            function one() {
+                for (i = 0; i < elements.length; i++) {
+                    elements[i].style.msFlex = "100%";  // IE10
+                    elements[i].style.flex = "100%";
+                }
+            }
+
+            // Two images side by side
+            function two() {
+                for (i = 0; i < elements.length; i++) {
+                    elements[i].style.msFlex = "50%";  // IE10
+                    elements[i].style.flex = "50%";
+                }
+            }
+
+            // Four images side by side
+            function four() {
+                for (i = 0; i < elements.length; i++) {
+                    elements[i].style.msFlex = "25%";  // IE10
+                    elements[i].style.flex = "25%";
+                }
+            }
+
+            // Add active class to the current button (highlight it)
+            var header = document.getElementById("myHeader");
+            var btns = header.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                });
+            }
+
         </script>
 
     </body>
