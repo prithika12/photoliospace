@@ -8,10 +8,9 @@ body {
 /* Style the tab */
 .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
-    /*background-color: darkseagreen;*/
-    background-color: hsl(0, 20%, 50%);
-    
+    /*border: 1px solid #ccc;
+    background-color: darkseagreen;
+    background-color: hsl(0, 20%, 50%);*/
 }
 
 .fa {
