@@ -30,7 +30,7 @@ body {
 .fa-facebook {
     background: #3B5998;
     color: white;
-    position: absolute;
+    position: page;
 }
 
     /* Style the buttons inside the tab */
