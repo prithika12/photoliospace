@@ -71,24 +71,28 @@ body {
     color: white;
 }
 
- /* body {
-    background-image: url('images/img1.jpeg');
-    } */
+
 
 .background {
-    background-image: url('images/bg4.jpg');
+     background-image: url('images/bg4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    /*position: relative;*/
-   }
+    position: absolute; 
+      
+}
 
-/*@media screen and (max-width:767px) {
-    .background {
-        background-size: cover;
-        object-fit: cover;
-        object-position: bottom;
+    @media screen and (max-width:767px) {
+        .background {
+            position: fixed;
+            width: 0;
+            height: 0;
+            padding: 50vh 50vw;
+            object-fit: cover;
+            object-position: bottom;
+        }
     }
-}*/
+
+
 
 .clstitle {
     color: floralwhite;

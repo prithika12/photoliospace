@@ -4,155 +4,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
    </head>
-    <body class="background">
-        <div>
-            <br>
-            <div class="tab centered">
-                <!--  <button class="tablinks" onclick="openCity(event, 'page1')">Home</button> -->
-                <button class="tablinks" onclick="openCity(event, 'page1')">Home</button>
-                <button class="tablinks" onclick="openCity(event, 'click_aboutus')">About Us</button>
-                <button class="tablinks" onclick="openCity(event, 'click_gallery')">Photo Gallery</button>
+<body class="background img">    <div>
+        <br>
+        <div class="tab centered">
+            <!--  <button class="tablinks" onclick="openCity(event, 'page1')">Home</button> -->
+            <button class="tablinks" onclick="openCity(event, 'page1')">Home</button>
+            <button class="tablinks" onclick="openCity(event, 'click_aboutus')">About Us</button>
+            <button class="tablinks" onclick="openCity(event, 'click_gallery')">Photo Gallery</button>
 
-                <!-- social media icons -->
-                <!-- Add icon library -->
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <!-- social media icons -->
+            <!-- Add icon library -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-                <a href="https://www.facebook.com/prithimayura" target="blank_" class="fa fa-facebook"></a>
-                <hr>
-
-
-                <div id="page1" class="tabcontent">
-
-                    <div id="page1">
-
-                        <!-- <h2><span class="clstitle"> Discover </span> <br> <span class="clstitlemiddle">your inner</span> <span class="clstitle"> Rhythm </span> </h2>-->
-
-                        <h2><span class="clstitle"> Discover your inner Rhythm </span> </h2>
-
-                        <br>
-
-                    </div>
-                </div>
-            </div>
-
-            <div id="click_aboutus" class="tabcontent">
-
-                <p class="aboutUs">
-                    The Founder and Artistic Director of Rhythm of Mayura, Prithika Kamalesan, is a dedicated dancer residing in Kitchener, Ontario. She is presently enrolled in a dual degree program (BBA & BSc) at Wilfrid Laurier University.
-
-                    She began her Bharatanatyam training when she was eight years old in India. After relocating to Canada, she successfully completed her Teacher's Diploma at Kalaimanram Academy of Fine Arts & Yoga. Since then, she was driven to open her own studio in order to share and teach everyone this joyful skill.
-                </p>
-
-                <aside>
-                    <img width="100%" src="images/logo.PNG">
-                </aside>
-
-            </div>
+            <a href="https://www.facebook.com/prithimayura" target="blank_" class="fa fa-facebook"></a>
+            <hr>
 
 
-                <div id="click_gallery" class="tabcontent">
+            <div id="page1" class="tabcontent">
 
-                    <!-- Header -->
-                    <div class="header" id="myHeader">
-                        <button class="btn" onclick="one()">Large</button>
-                        <button class="btn" onclick="two()">Pixel</button>
-                        <button class="btn" onclick="four()">Gallery</button>
-                    </div>
+                <div id="page1">
 
-                    <!-- Photo Grid -->
-                    <div class="row">
-                        <div class="column">
-                            <img src="images/img1.jpeg" style="width:100%">
-                            <img src="images/img9.jpeg" style="width:100%">
-                            <img src="images/img3.jpeg" style="width:100%">
+                    <!-- <h2><span class="clstitle"> Discover </span> <br> <span class="clstitlemiddle">your inner</span> <span class="clstitle"> Rhythm </span> </h2>-->
 
+                    <h2><span class="clstitle"> Discover your inner Rhythm </span> </h2>
 
-                        </div>
-
-                        <div class="column">
-                            <img src="images/img2.jpeg" style="width:100%">
-                            <img src="images/img8.jpeg" style="width:100%">
-
-
-                        </div>
-
-                        <div class="column">
-                            <img src="images/img4.jpeg" style="width:100%">
-                            <img src="images/img5.jpeg" style="width:100%">
-                            <img src="images/img7.jpeg" style="width:100%">
-                        </div>
-
-                        <div class="column">
-                            <img src="images/img6.jpeg" style="width:100%">
-                            <img src="images/img10.jpeg" style="width:100%">
-
-                        </div>
-
-                    </div>
-
+                    <br>
 
                 </div>
             </div>
+        </div>
+
+        <div id="click_aboutus" class="tabcontent">
+
+            <p class="aboutUs">
+                The Founder and Artistic Director of Rhythm of Mayura, Prithika Kamalesan, is a dedicated dancer residing in Kitchener, Ontario. She is presently enrolled in a dual degree program (BBA & BSc) at Wilfrid Laurier University.
+
+                She began her Bharatanatyam training when she was eight years old in India. After relocating to Canada, she successfully completed her Teacher's Diploma at Kalaimanram Academy of Fine Arts & Yoga. Since then, she was driven to open her own studio in order to share and teach everyone this joyful skill.
+            </p>
+
+            <aside>
+                <img width="100%" src="images/logo.PNG">
+            </aside>
+
+        </div>
 
 
-            <script>
-                function openCity(evt, cityName) {
-                    var i, tabcontent, tablinks;
-                    tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
-                    }
-                    tablinks = document.getElementsByClassName("tablinks");
-                    for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace(" active", "");
-                    }
-                    document.getElementById(cityName).style.display = "block";
-                    evt.currentTarget.className += " active";
-                }
+        <div id="click_gallery" class="tabcontent">
+
+            <!-- Header -->
+            <div class="header" id="myHeader">
+                <button class="btn" onclick="one()">Large</button>
+                <button class="btn" onclick="two()">Pixel</button>
+                <button class="btn" onclick="four()">Gallery</button>
+            </div>
+
+            <!-- Photo Grid -->
+            <div class="row">
+                <div class="column">
+                    <img src="images/img1.jpeg" style="width:100%">
+                    <img src="images/img9.jpeg" style="width:100%">
+                    <img src="images/img3.jpeg" style="width:100%">
 
 
-                // Get the elements with class="column"
-                var elements = document.getElementsByClassName("column");
+                </div>
 
-                // Declare a loop variable
-                var i;
+                <div class="column">
+                    <img src="images/img2.jpeg" style="width:100%">
+                    <img src="images/img8.jpeg" style="width:100%">
 
-                // Full-width images
-                function one() {
-                    for (i = 0; i < elements.length; i++) {
-                        elements[i].style.msFlex = "100%";  // IE10
-                        elements[i].style.flex = "100%";
-                    }
-                }
 
-                // Two images side by side
-                function two() {
-                    for (i = 0; i < elements.length; i++) {
-                        elements[i].style.msFlex = "50%";  // IE10
-                        elements[i].style.flex = "50%";
-                    }
-                }
+                </div>
 
-                // Four images side by side
-                function four() {
-                    for (i = 0; i < elements.length; i++) {
-                        elements[i].style.msFlex = "25%";  // IE10
-                        elements[i].style.flex = "25%";
-                    }
-                }
+                <div class="column">
+                    <img src="images/img4.jpeg" style="width:100%">
+                    <img src="images/img5.jpeg" style="width:100%">
+                    <img src="images/img7.jpeg" style="width:100%">
+                </div>
 
-                // Add active class to the current button (highlight it)
-                var header = document.getElementById("myHeader");
-                var btns = header.getElementsByClassName("btn");
-                for (var i = 0; i < btns.length; i++) {
-                    btns[i].addEventListener("click", function () {
-                        var current = document.getElementsByClassName("active");
-                        current[0].className = current[0].className.replace(" active", "");
-                        this.className += " active";
-                    });
-                }
+                <div class="column">
+                    <img src="images/img6.jpeg" style="width:100%">
+                    <img src="images/img10.jpeg" style="width:100%">
 
-            </script>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+
+        // Get the elements with class="column"
+        var elements = document.getElementsByClassName("column");
+
+        // Declare a loop variable
+        var i;
+
+        // Full-width images
+        function one() {
+            for (i = 0; i < elements.length; i++) {
+                elements[i].style.msFlex = "100%";  // IE10
+                elements[i].style.flex = "100%";
+            }
+        }
+
+        // Two images side by side
+        function two() {
+            for (i = 0; i < elements.length; i++) {
+                elements[i].style.msFlex = "50%";  // IE10
+                elements[i].style.flex = "50%";
+            }
+        }
+
+        // Four images side by side
+        function four() {
+            for (i = 0; i < elements.length; i++) {
+                elements[i].style.msFlex = "25%";  // IE10
+                elements[i].style.flex = "25%";
+            }
+        }
+
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myHeader");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+
+    </script>
 
 </body>
 </html>
