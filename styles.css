@@ -26,7 +26,7 @@
 .fa-facebook {
     background: #3B5998;
     color: white;
-    position: center;
+    position: relative;
 }
 
     /* Style the buttons inside the tab */
