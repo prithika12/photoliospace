@@ -73,7 +73,7 @@ body {
 
 
 
-.background {
+/*.background {
     background-image: url('images/bg4.jpg');
     background-repeat: no-repeat;
     position: absolute;
@@ -85,6 +85,8 @@ body {
         .background {
             position: absolute;
             background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             width: 100%;
             height: 100%;
             padding: 50vh 50vw;
@@ -92,7 +94,7 @@ body {
         }
     }
 
-
+*/
 
 .clstitle {
     color: floralwhite;
@@ -195,16 +197,51 @@ pgbody {
     padding: 10px 20px;
 }
 
-svg {
-    fill: white;
-    height: auto;
-    max-width: 206vmin;
-    transform-origin: left;
-    width: 93%;
-    position: absolute;
-    margin:8px;
-    margin-left:8px;
-    margin-right: 4px;
+/* Desktop-only view. 
+ * Largest mobile view is iPad Pro with 1366 in landscape mode
+ */
+@media only screen and (min-width:1367px) {
+    :root {
+        --bg-image-jpg: url('images/bg4.jpg');
+        --bg-size: cover;
+        --bg-pos: center center;
+    }
+}
+/* Large mobile device screens */
+@media only screen and (max-width:1366px) {
+    :root {
+        --bg-image-jpg: url('images/bg4.jpg');
+        --bg-pos: top center;
+        --bg-size: 100vw auto;
+    }
+}
+/* Load a smaller image for smaller screens */
+@media only screen and (max-width:970px) {
+    :root {
+        --bg-image-jpg: url('images/bg4.jpg');
+    }
+}
+/* Smallest image for phone screens */
+@media only screen and (max-width:500px) {
+    :root {
+        
+        --bg-image-jpg: url('images/bg4.jpg');
+    }
+}
+
+body {
+    background-color: #fff;
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+.webp body {
+    background: var(--bg-image-webp) var(--bg-pos) fixed no-repeat;
+    background-size: var(--bg-size);
+}
+
+.no-webp body {
+    background: var(--bg-image-jpg) var(--bg-pos) fixed / var(--bg-size) no-repeat;
 }
 
 
