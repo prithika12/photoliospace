@@ -80,15 +80,7 @@ body {
     
 }
 
-    @media screen and (max-width:784px) {
-        .background {
-            background-size: 100vw;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            
-            
-        }
-    }
+
 
 
 
