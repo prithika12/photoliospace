@@ -73,7 +73,7 @@ body {
 
 
 
-/*.background {
+.background {
     background-image: url('images/bg4.jpg');
     background-repeat: no-repeat;
     position: absolute;
@@ -83,18 +83,15 @@ body {
 
     @media screen and (max-width:767px) {
         .background {
-            position: absolute;
-            background-size: cover;
+            background-size: 100vw auto;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            width: 100%;
-            height: 100%;
             padding: 50vh 50vw;
             object-position: bottom;
         }
     }
 
-*/
+
 
 .clstitle {
     color: floralwhite;
