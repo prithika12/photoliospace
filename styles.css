@@ -80,21 +80,40 @@ body {
     
 }
 
+        .titletext {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.clstitle {
-    color: floralwhite;
-    font-size: 2.0em;
-    font-weight: 800;
-    font-family: Papyrus;
-    animation: mymove 5s infinite;
-}
+            .titletext .textBx {
+            position: relative;
+            max-width: 600px;
+        }
 
-.clstitlemiddle {
-    color: floralwhite;
-    font-size: 3.2em;
-    font-weight: 900;
-    font-family: "Sylfaen", cursive;
-}
+        .titletext .textBx h2 {
+            color: #FFF;
+            font-size: 4em;
+            line-height: 1.4em;
+            font-weight: 500;
+        }
+
+        .titletext .textBx h2 .clstitle {
+            color: floralwhite;
+            font-size: 2.0em;
+            font-weight: 800;
+            font-family: Papyrus;
+            animation: mymove 5s infinite;
+        }
+
+            .titletext .textBx h2 .clstitlemiddle {
+                color: floralwhite;
+                font-size: 3.2em;
+                font-weight: 900;
+                font-family: "Sylfaen", cursive;
+            }
 
 .aboutUs {
     text-align: center;
