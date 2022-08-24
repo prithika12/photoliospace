@@ -207,10 +207,20 @@ aside {
     }
 
     .aboutUs {
-        width: 95%;
         margin: 0 auto;
         width: 100%;
     }
+
+    .tab {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .centered {
+        margin: 0 auto;
+        width: 100%;
+    }
+
 
     }
 
