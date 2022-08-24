@@ -74,15 +74,17 @@ body {
 
 
 .background {
-     background-image: url('images/bg4.jpg');
+    background-image: url('images/bg4.jpg');
     background-repeat: no-repeat;
-    position: absolute; 
-      
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
     @media screen and (max-width:767px) {
         .background {
             position: absolute;
+            background-size: cover;
             width: 0;
             height: 0;
             padding: 50vh 50vw;
