@@ -50,7 +50,7 @@ body {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    font-size: 23px;
+    font-size: 19px;
 }
 
         /* Change background color of buttons on hover */
@@ -79,9 +79,6 @@ body {
     height: 100vh;
     
 }
-
-
-
 
 
 .clstitle {
@@ -132,6 +129,7 @@ pgbody {
 .header {
     text-align: center;
     padding: 32px;
+    display: flex;
 }
 
 .row {
