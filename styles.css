@@ -81,15 +81,7 @@ body {
     height: 100%;
 }
 
-    @media screen and (max-width:767px) {
-        .background {
-            background-size: 100vw auto;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            padding: 50vh 50vw;
-            object-position: bottom;
-        }
-    }
+
 
 
 
@@ -198,7 +190,7 @@ pgbody {
  * Largest mobile view is iPad Pro with 1366 in landscape mode
  */
 @media only screen and (min-width:1367px) {
-    :root {
+    .background {
         --bg-image-jpg: url('images/bg4.jpg');
         --bg-size: cover;
         --bg-pos: center center;
@@ -206,7 +198,7 @@ pgbody {
 }
 /* Large mobile device screens */
 @media only screen and (max-width:1366px) {
-    :root {
+    .background {
         --bg-image-jpg: url('images/bg4.jpg');
         --bg-pos: top center;
         --bg-size: 100vw auto;
@@ -214,14 +206,13 @@ pgbody {
 }
 /* Load a smaller image for smaller screens */
 @media only screen and (max-width:970px) {
-    :root {
+    .background {
         --bg-image-jpg: url('images/bg4.jpg');
     }
 }
 /* Smallest image for phone screens */
 @media only screen and (max-width:500px) {
-    :root {
-        
+    .background {
         --bg-image-jpg: url('images/bg4.jpg');
     }
 }
