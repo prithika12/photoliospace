@@ -1,8 +1,33 @@
-<style>
+<style >
 
-body {
-    font-family: Arial;
+.masthead {
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    color: white;
 }
+
+h2 {
+    font-size: 4rem;
+}
+
+.color-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.2);
+}
+
+@media (max-width: 768px) {
+    .masthead {
+        min-height: 30vh;
+    }
+
+    h2 {
+        font-size: calc(1.525rem + 3.3vw);
+    }
+}
+
 
 @keyframes mymove {
     50% {
@@ -71,34 +96,6 @@ body {
     color: white;
 }
 
-
-
-.masthead {
-    background-size:cover;
-    min-height:100vh;
-    position:relative;
-    color:white;
-}
-
-h2 {
-    font-size:4rem;
-}
-
-.color-overlay{
-    position:absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.2);
-}
-
-@media (max-width: 768px){
-    .masthead{
-        min-height: 30vh;
-    }
-    h2{
-        font-size: calc(1.525rem + 3.3vw);
-    }
-}
 
     .clstitle {
     color: floralwhite;
