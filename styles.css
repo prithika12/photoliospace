@@ -74,12 +74,8 @@ body {
 
 
 .background {
-    background: url(images/bg4.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
+    background: url(images/bg4.jpg) ;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -88,8 +84,8 @@ body {
             background-size: 100vw auto;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            padding: 50vh 50vw;
-            object-position: bottom;
+            padding: 100vh 100vw;
+            
         }
     }
 
@@ -196,51 +192,6 @@ pgbody {
     padding: 10px 20px;
 }
 
-/* Desktop-only view. 
- * Largest mobile view is iPad Pro with 1366 in landscape mode
- */
-@media only screen and (min-width:1367px) {
-    .background {
-        --bg-image-jpg: url('images/bg4.jpg');
-        --bg-size: cover;
-        --bg-pos: center center;
-    }
-}
-/* Large mobile device screens */
-@media only screen and (max-width:1366px) {
-    .background {
-        --bg-image-jpg: url('images/bg4.jpg');
-        --bg-pos: top center;
-        --bg-size: 100vw auto;
-    }
-}
-/* Load a smaller image for smaller screens */
-@media only screen and (max-width:970px) {
-    .background {
-        --bg-image-jpg: url('images/bg4.jpg');
-    }
-}
-/* Smallest image for phone screens */
-@media only screen and (max-width:500px) {
-    .background {
-        --bg-image-jpg: url('images/bg4.jpg');
-    }
-}
-
-body {
-    background-color: #fff;
-    margin: 0px auto;
-    padding: 0px auto;
-}
-
-.webp body {
-    background: var(--bg-image-webp) var(--bg-pos) fixed no-repeat;
-    background-size: var(--bg-size);
-}
-
-.no-webp body {
-    background: var(--bg-image-jpg) var(--bg-pos) fixed / var(--bg-size) no-repeat;
-}
 
 
-</style>
+</style >
