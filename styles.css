@@ -2,11 +2,7 @@
 
 
 
-@keyframes mymove {
-    50% {
-        text-shadow: 10px 20px 30px blue;
-    }
-}
+
 
 /* Style the tab */
 .tab {
@@ -69,8 +65,13 @@
     color: white;
 }
 
+@keyframes mymove {
+    50% {
+        text-shadow: 10px 20px 30px blue;
+    }
+}
 
-    .clstitle {
+.clstitle {
     color: floralwhite;
     font-size: 2.0em;
     font-weight: 800;
@@ -86,7 +87,7 @@
      }
 
 .aboutUs {
-    text-align: center;
+    text-align: justify;
     position:absolute;
     max-width: 450px;
     margin: 25px auto;
@@ -96,6 +97,7 @@
     font-family: 'Trebuchet MS';
 }
 
+/*
 aside {
     width: 40%;
     padding-left: 50px;
@@ -104,6 +106,8 @@ aside {
     display: block;
     position: relative;
 }
+*/
+
 .background {
     background-image: url("images/bg4.jpg");
     background-repeat: no-repeat;
@@ -184,6 +188,34 @@ aside {
     font-size: 1.8em;
     padding: 10px 20px;
 }
+
+@media screen and (max-width: 784px) {
+    .background {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .h2 {
+            width: 95%;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+    .header {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .aboutUs {
+        width: 95%;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    }
+
+}
+  
 
 
 </style >
