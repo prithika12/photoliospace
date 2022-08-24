@@ -82,13 +82,13 @@ body {
     /*position: relative;*/
    }
 
-@media screen and (max-width:767px) {
+/*@media screen and (max-width:767px) {
     .background {
         background-size: cover;
         object-fit: cover;
         object-position: bottom;
     }
-}
+}*/
 
 .clstitle {
     color: floralwhite;
