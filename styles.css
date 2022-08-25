@@ -99,7 +99,7 @@ body, html {
     font-family: Papyrus;
     animation: mymove 5s infinite;
     text-align: left;
-    color:
+   
 }
 
     .clstitlemiddle {
@@ -213,6 +213,11 @@ aside {
     padding: 10px 20px;
 }
 
+hr {
+    width: 100%;
+    
+}
+
 
 
 @media (max-width:768px) {
@@ -251,6 +256,15 @@ aside {
         position: center;
         height:fit-content;
      
+    }
+
+    .hr {
+        border: 0;
+        clear: both;
+        display: block;
+        width: 96%;
+        color: #FFFF00;
+        height: 1px;
     }
 
     
