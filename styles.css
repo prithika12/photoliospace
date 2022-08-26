@@ -14,12 +14,27 @@ body, html {
 /* Style the tab */
 .tab {
     overflow: hidden;
+    
     /*border: 1px solid #ccc;
     background-color: darkseagreen;
     background-color: hsl(0, 20%, 50%);*/
 }
     .centered {
     text-align: match-parent;
+
+    }
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+    .sticky + .content {
+        padding-top: 102px;
     }
 .fa {
     padding: 20px;
@@ -49,6 +64,10 @@ body, html {
     background: white;
     color: deeppink;
     min-inline-size: fit-content;
+}
+
+.logo {
+    border-image: url("C:\photoliospace\images\logo.PNG");
 }
 
     /* Style the buttons inside the tab */
@@ -93,21 +112,31 @@ body, html {
 
 .clstitle {
     color: floralwhite;
-    /*  font-size: 2.0em;*/
-    font-size: clamp(3rem, 3rem + 3vw, 3rem);
-    font-weight: 800;
-    font-family: Papyrus;
-    animation: mymove 5s infinite;
-    text-align: left;
-   
+    font-size: clamp(3rem, 3rem + 4vw, 4rem);
+    font-weight: 900;
+    font-family: 'Script MT', cursive;
+    animation: mymove 3s infinite;
+    text-align: left; 
+    
+
 }
 
     .clstitlemiddle {
           color: floralwhite;
-          font-size: 3.2em;
+          font-size: 0.5em;
           font-weight: 900;
           font-family: "Sylfaen", cursive;
      }
+
+    .clsmiddle{
+    color: floralwhite;
+    font-size: clamp(3rem, 3rem + 4vw, 4rem);
+    font-weight: 900;
+    font-family: 'Script MT', cursive;
+    animation: mymove 3s infinite;
+    text-align: left;
+    padding-inline:3px;
+    }
 
 .aboutUs {
     text-align: justify;
@@ -119,7 +148,7 @@ body, html {
     font-size: 22px;
     line-height: 1;
     color: white;
-    font-family: 'Trebuchet MS';
+    font-family: Corbel;
 }
 
 /*
@@ -139,6 +168,7 @@ aside {
     background-size: cover;
     background-image: url("images/bg4.jpg");
     min-height: 100%;
+   
   
 }
 /* Photo Gallery Style*/
@@ -215,7 +245,7 @@ aside {
 
 hr {
     width: 100%;
-    
+    margin-left:0;
 }
 
 
@@ -259,12 +289,10 @@ hr {
     }
 
     .hr {
-        border: 0;
-        clear: both;
-        display: block;
-        width: 96%;
+        width: 100%;
         color: #FFFF00;
         height: 1px;
+        display: block;
     }
 
     
@@ -277,7 +305,8 @@ hr {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #5F413D;
+    background-color: black;
+    opacity:0.6;
     color: white;
     text-align: center;
 }

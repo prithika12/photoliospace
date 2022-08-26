@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Photoliospace</title>
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="background" onload="openCity(event, 'page1')">
     <div>
         <br>
-        <div class="tab centered">
+        <div class="tab centered" id="myheader">
             <!--  <button class="tablinks" onclick="openCity(event, 'page1')">Home</button> -->
             <button class="tablinks" onclick="openCity(event, 'page1')">Home</button>
             <button class="tablinks" onclick="openCity(event, 'click_aboutus')">About Us</button>
-            <button class="tablinks" onclick="openCity(event, 'click_gallery')">Photo Gallery</button>
-           
+            <button class="tablinks" onclick="openCity(event, 'click_gallery')">Photo Gallery</button> <hr>
+            
             <br>
-            <br>
-            <hr>
-            <br>
-           
+            
+
             <div id="page1" class="tabcontent">
 
                 <div id="page1">
 
                     <!-- <h2><span class="clstitle"> Discover </span> <br> <span class="clstitlemiddle">your inner</span> <span class="clstitle"> Rhythm </span> </h2>-->
 
-                    <h2><span class="clstitle"> Discover <br>your inner Rhythmmm </span> </h2>
+                    <h2><span class="clstitle"> Discover <br><span class="clstitlemiddle">your inner</span> <span class="clsmiddle">Rhythm</span> </span> </h2>
 
                     <br>
 
@@ -103,6 +102,7 @@
         <a href="https://www.facebook.com/prithimayura" target="blank_" class="fa fa-facebook"></a>
         <a href="https://www.linkedin.com/company/rhythm-of-mayura/" target="_blank" class="fa fa-linkedin"></a>
         <a href="https://www.instagram.com/rhythm_of_mayura/" target="_blank" class="fa fa-instagram"></a>
+        <a href="https://rhythmofmayura.wixsite.com/rythm" target="_blank"> <img src="C:\photoliospace\images\logo.PNG" width="50" height="60" style="vertical-align:middle;" ></a>
 
     </div>
 
@@ -164,6 +164,18 @@
             });
         }
 
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myheader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
     </script>
 
 </body>
