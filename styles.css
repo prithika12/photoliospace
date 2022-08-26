@@ -145,7 +145,7 @@ body, html {
     font-size: 22px;
     line-height: 1;
     color: white;
-    font-family: Barlow;
+    font-family: "Trebuchet MS";
 }
 
 /*
@@ -281,8 +281,8 @@ hr {
     .aboutUs {
         display: flex;
         position: center;
-        height:fit-content;
-     
+        height: fit-content;
+        font-family: "Trebuchet MS";
     }
 
     .hr {
