@@ -23,9 +23,6 @@ body, html {
     text-align: match-parent;
 
     }
-.content {
-    padding: 16px;
-}
 
 .sticky {
     position: fixed;
@@ -67,7 +64,7 @@ body, html {
 }
 
 .logo {
-    border-image: url("C:\photoliospace\images\logo.PNG");
+    border-image: url("images/logo.PNG");
 }
 
     /* Style the buttons inside the tab */
@@ -148,7 +145,7 @@ body, html {
     font-size: 22px;
     line-height: 1;
     color: white;
-    font-family: Corbel;
+    font-family: Barlow;
 }
 
 /*
@@ -168,7 +165,7 @@ aside {
     background-size: cover;
     background-image: url("images/bg4.jpg");
     min-height: 100%;
-   
+    hei
   
 }
 /* Photo Gallery Style*/
