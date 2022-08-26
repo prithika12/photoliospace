@@ -292,6 +292,10 @@ hr {
         display: block;
     }
 
+    tab button.active {
+        background-color:black;
+    }
+
     
 }
 
