@@ -1,2 +1,2 @@
 # photoliospace
-https://photoliospace.w3spaces.com/ 
+https://prithika12.github.io/photoliospace/ 
